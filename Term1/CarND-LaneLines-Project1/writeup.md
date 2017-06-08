@@ -21,6 +21,8 @@ The goals / steps of this project are the following:
 [image7]: ./steps_reduced/step_6.jpg "Grayscale"
 [image8]: ./steps_reduced/step_7.jpg "Grayscale"
 [image9]: ./steps_reduced/step_8.jpg "Grayscale"
+[video1]: ./steps_reduced/video1.gif "Grayscale"
+[video2]: ./steps_reduced/video2.gif "Grayscale"
 
 ---
 
@@ -52,21 +54,26 @@ Lane detection pipeline consists of the following steps
 ![alt text][image8]
 
 * Merge detected lanes with original image           
-![alt text][image9] 
+![alt text][image9]
 
 
-**The *draw_lines()* function was modified to extrapolate and detect two lanes as follows**
+**The *draw_lines()* function was modified to extrapolate and detect two lanes. The following steps are implemented**
 1. Calculate the slopes of each line of the output of hough_lines function. Partition the lines and points to left and 
     right lanes. Negative slope lines are classified as belonging to left lane  and positive slope lines are classified
      as beloinging to right lane
     
 2. For each of the classified left and right lanes, average slope is calculated
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image1]
 
 
+
+
+## Output Videos:
+Processed videos are present in the ***test_videos_output*** folder
+
+SolidWhiteRight             |  SolidYellowLeft
+:-------------------------:|:-------------------------:
+![alt text][video1]  |  ![alt text][video2]
 ### 2. Potential shortcomings 
 
 
